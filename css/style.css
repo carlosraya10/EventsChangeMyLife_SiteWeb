@@ -52,6 +52,7 @@ label{
 }
 .header-right ul li a{
 	margin-right: 5px;
+	
 }
 .header-left ul li a:hover,.header-right ul li a:hover{
 	color:#3498db;
@@ -62,11 +63,12 @@ label{
 .header-right{
 	float:right;
 	position:relative;
+	
 }
 .sign-up-right a{
 	position:absolute;
-	top: 24%;
-	right: 40.5%;
+	top: 26px;
+	right: -16px;
 	color: #777777;
 	font-size: 15px;
 	font-weight: 600;
@@ -86,7 +88,7 @@ label{
 	font-family: 'Open Sans', sans-serif;
 }
 .header-right ul  li.login {
-	padding: 0em 4.5em 0 0;
+	/* padding: 0em 4.5em 0 0; */
 }
 i.user{
 	width:30px;
