@@ -689,6 +689,11 @@ i.go{
 	cursor: pointer;
 	position: relative;
 	display: inline-block;
+
+}
+.nbs-flexisel-item li {
+	display:inline-block;
+	
 }
 .course_demo{
 	background: #FFF;
@@ -699,7 +704,7 @@ i.go{
 	padding: 1% 3% 1% 3%;
 }
 .nbs-flexisel-item img {
-	  width: 45%;
+	  width: 75%;
 	  cursor: pointer;
 	  position: relative;
 	  margin-bottom: 0px;
@@ -745,15 +750,26 @@ i.go{
 	font-size: 1.3em;
 	font-weight: 700;
 	font-family: 'Open Sans', sans-serif;
-	margin-top:1.5em;
+	/*margin-top:1.5em;*/
+	margin: 6px 0 6px 0px;
+}
+/* j'ai remplacer le h4 par un p parce que les valeurs s'ecrasent qqpart et je pouvais pas le centrer  */
+.ipad p{
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	margin: 6px 0 6px 0px;
 }
 .ipad h3 {
 	color: #3498db;
 	text-transform: uppercase;
+	text-align:right;
 	font-size: 1.75em;
 	font-weight: 700;
 	font-family: 'Open Sans', sans-serif;
-	margin: 6px 0 12px 0px;
+	margin: 6px 0 6px 0px;
 }
 .ipad ul li a {
 	color: #727272;
@@ -773,7 +789,7 @@ i.cart-1 {
 	display: inline-block;
 	cursor: pointer;
 	vertical-align: middle;
-	margin: 0 3px 0 2em;
+/*	margin: 0 3px 0 2em;  je l'ai enleve pour avoir l'alignement avec i.heart */ 
 }
 i.heart {
 	width: 20px;
@@ -782,7 +798,7 @@ i.heart {
 	display: inline-block;
 	cursor: pointer;
 	vertical-align: middle;
-	margin: 0 4px 0 1em;
+/*	margin: 0 4px 0 1em; je l'ai enleve pour avoir l'alignement avec i.cart-1 */
 }
 .clients {
 	margin: 3em 0;
