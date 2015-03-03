@@ -376,11 +376,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 		<div class="transport-grid">
 			<div class="col-md-4 shipping">
-				<h3><i class="shipping-icon"></i>Free Shipping</h3>
+				<h3><i class="shipping-icon"></i>Service à domicile</h3>
 				<p>Syphogrants called into the council chamber, and these are changed every day. It is a fundamental rule of their government,</p>
 			</div>
 			<div class="col-md-4 shipping">
-				<h3><i class="correct-icon"></i>100 % Original</h3>
+				<h3><i class="correct-icon"></i>100 % garantie</h3>
 				<p>Syphogrants called into the council chamber, and these are changed every day. It is a fundamental rule of their government,</p>
 			</div>
 			<div class="col-md-4 return">
