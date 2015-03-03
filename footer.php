@@ -25,49 +25,10 @@
 				</div>
 				<div class="clearfix"></div>
 			</div>
-			<div class="footer-middle">
-				<div class="col-md-6 different-products">
-					<ul>
-						<li class="first"> Shop </li> -
-						<li><a href=""> Mobiles </a></li> |
-						<li><a href=""> Laptops </a></li> |
-						<li><a href=""> Cameras </a></li> |
-						<li><a href=""> Clothing </a></li> |
-						<li><a href=""> Footwear </a></li> |
-						<li><a href=""> Jewellery </a></li> 
-					</ul>
-					<ul>
-						<li class="first"> Help </li> -
-						<li><a href=""> Faqs </a></li> |
-						<li><a href=""> shipping </a></li> |
-						<li><a href=""> payments </a></li> |
-						<li><a href=""> cancellation&returns </a></li> 
-					</ul>
-					<ul>
-						<li class="first"> account <li> -
-						<li><a href=""> log in </a></li> |
-						<li><a href=""> sign up </a></li> |
-						<li><a href=""> My WhishList </a></li> |
-						<li><a href=""> My cart </a></li> 
-					</ul>
-					<ul>
-						<li class="first"> boxshop </li> -
-						<li><a href="contact.html"> contact us </a></li> |
-						<li><a href=""> about us </a></li> |
-						<li><a href=""> careers </a></li> |
-						<li><a href=""> blog </a></li> |
-						<li><a href=""> press </a></li>
-					</ul>
-					<ul>
-						<li class="first"> policies</li> -
-						<li><a href=""> terms of use </a></li> |
-						<li><a href=""> security </a></li> |
-						<li><a href=""> privacy policy</a></li>
-					</ul>
-				</div>
-				<div class="col-md-6 about-text text-right">
+			
+				<div class="about-text text-right">
 					<h4>Events Change Life</h4>
-					<p> Une plateforme centrale de réservation destinée à l'événementiel pour permettre aussi aux professionnels qu’aux amateurs de  mettre en avant leurs compétences ou services afin de se faire valoir. </p>
+					<p> Une plateforme centrale de réservation destinée à l'événementiel pour permettre aux professionnels et aux amateurs de mettre en avant leurs compétences ou services afin de se faire valoir. </p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
