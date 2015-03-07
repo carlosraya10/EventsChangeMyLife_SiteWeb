@@ -1588,7 +1588,7 @@ h3.page-hed{
 	height: 31px;
 	font-size: 14px;
 	text-transform: uppercase;
-	width: 80px!important;
+/*	width: 80px!important;*/
 	text-align: center;
 }
 .labelTop.confirmpass {
@@ -1600,7 +1600,7 @@ h3.page-hed{
 	border-left:none;
 	padding: 2em 0 0 0;
 	min-height: 456px;
-	width: 38%;
+	/*width: 38%; */
 }
 .sign-up h4{
 	margin-bottom:2em;
@@ -1632,7 +1632,7 @@ h3.page-hed{
 	border: 1px solid #D6D6D6;
 	padding: 2em 0 0 0;
 	min-height: 456px;
-	width: 38%;
+	/*width: 38%;  */
 }
 .botton1 {
 	margin-right: 5.8em;
@@ -2119,14 +2119,14 @@ ul.p-list li a:hover{
 	-o-transition:0.5s all;
 }
 .coats{
-	margin-top:3em;
+	margin-top:0px;
 	text-align:center;
 }
 h3.c-head{
 	font-size:2em;
-	text-transform:uppercase;
 	color: #303030;
 	font-weight:600;
+	font-weight: bold;
 	margin:0;
 }
 .coats small a{
@@ -2900,9 +2900,7 @@ p.back{
 	.price1 {
 		margin-bottom: 30px;
 	}
-	.coats {
-		margin-top: 2em;
-	}
+	
 	.grid1_of_3 h3 {
 		font-size: 1.4em;
 	}

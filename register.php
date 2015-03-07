@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,48 +65,76 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 </head>
 <body>
-	<?php include("header.php"); ?>
+	<!-- header-section-starts -->
 	
 	
-	<div class="wrap">
-		<!-- start header menu -->
-		<?php include("headerMenu.php"); ?>
-
-		<!-- start account -->
-		<div class="login-page">
-			    <div class="dreamcrub">
-			   <div class="account_grid">
-			   <div class="col-md-6 login-left">
-			  	 <h3>DEVENIR MEMBRE GRATUITEMENT</h3>
-				 <p>Créer un compte sur notre portail vous permet d'effectuer le paiement plus rapide, stocker des adresses d'expédition multiples, consulter et suivre vos commandes dans votre compte et plus encore.</p>
-				 <a class="acount-btn" href="register.php">Creer un compte</a>
-			   </div>
-			   <div class="col-md-6 login-right">
-			  	<h3>SE CONNECTER</h3>
-				<p>Si vous êtes déjà membre, veuillez vous connecter.</p>
-				<form>
-				  <div>
-					<span>Adresse e-mail*</span>
+		<div class="wrap">
+			
+		</div>
+		<!-- start registration -->
+		<section id="main">
+	<div class="content">
+		<div class="pag-nav">
+			<ul class="p-list">
+				<li><a href="index.html">Home</a></li> &nbsp;&nbsp;/&nbsp;
+				<li class="act">&nbsp;Register</li>
+			</ul>
+		</div>
+		<div class="coats">
+			<h3 class="c-head">CREER VOTRE COMPTE <br/>Events Change Life</h3>
+			<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorp uspendisse a pellentesque.</p>
+		</div>
+		<div class="register">
+	  	  <form> 
+			 <div class="register-top-grid">
+			
+				 <div>
+					<span>Nom</span>
 					<input type="text"> 
-				  </div>
-				  <div>
-					<span>Mot de passe*</span>
+				 </div>
+				 <div>
+					<span>Prenom</span>
 					<input type="text"> 
+				 </div>
+				 <div>
+					 <span>Adresse e-mail</span>
+					 <input type="text"> 
+				 </div>
+				  <div class="clearfix"></div>
+		  </div>			  
+			
+				 
+				  <div class="clearfix"></div>
+				 <div class="sgn">
+				 <input type="checkbox" name="is_subscribed" title="Sign Up for Newsletter" value="1" id="is_subscribed" class="checkbox"/>
+					<label for="is_subscribed">Inscrivez-vous à la newsletter</label>
+<div class="clearfix"></div>
 				  </div>
-				  <p class="required">* Champs obligatoires</p>
-				  <a class="forgot" href="#">Mot De Passe Oublié?</a>
-				  <input type="submit" value="Connexion">
-			    </form>
-			   </div>	
-			   <div class="clearfix"> </div>
-			 </div>
-		   </div>
-</div>
+			     <div class="register-bottom-grid">
+					  
+						 <div>
+							<span>Créez un mot de passe</span>
+							<input type="password">
+						 </div>
+						 <div>
+							<span>Confirmez votre mot de passe</span>
+							<input type="password">
+						 </div>
+				 </div>
+			</form>
+			<div class="clearfix"> </div>
+			<div class="register-but">
+			   <form>
+				   <input type="submit" value="Valider">
+				   <div class="clearfix"> </div>
+			   </form>
+			</div>
+	   </div>
 	</div>
-	
-	<!-- footer -->
-	 <?php include("footer.php") ?>
+	</div>
+	</div>
 	 
-	 
+		</div>
+	 </div>
 </body>
 </html>

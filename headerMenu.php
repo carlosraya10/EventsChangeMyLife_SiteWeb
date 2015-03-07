@@ -11,13 +11,13 @@
 							<div class="h_nav">
 								<h4>animateur</h4>
 								<ul>
-									<li><a href="products.html"> commercial</a></li>
-									<li><a href="products.html"> de vente</a></li>
-									<li><a href="products.html"> enfants</a></li>
-									<li><a href="products.html"> micro divertissment</a></li>
-									<li><a href="products.html"> polyvalent</a></li>
-									<li><a href="products.html"> socio-culturel</a></li>
-									<li><a href="products.html"> sportif</a></li>
+									<li><a href="produitsAnimation.php"> commercial</a></li>
+									<li><a href="produitsAnimation.php"> de vente</a></li>
+									<li><a href="produitsAnimation.php"> enfants</a></li>
+									<li><a href="produitsAnimation.php"> micro divertissment</a></li>
+									<li><a href="produitsAnimation.php"> polyvalent</a></li>
+									<li><a href="produitsAnimation.php"> socio-culturel</a></li>
+									<li><a href="produitsAnimation.php"> sportif</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -25,13 +25,13 @@
 							<div class="h_nav">
 								<h4>Animation fixe</h4>
 								<ul>
-									<li><a href="products.html"> caricaturiste</a></li>
-									<li><a href="products.html"> char</a></li>
-									<li><a href="products.html"> mascottes</a></li>
-									<li><a href="products.html"> maquillage enfant</a></li>
-									<li><a href="products.html"> princesses</a></li>
-									<li><a href="products.html"> sportif</a></li>
-									<li><a href="products.html"> structures gonflables</a></li>
+									<li><a href="produitsAnimation.php"> caricaturiste</a></li>
+									<li><a href="produitsAnimation.php"> char</a></li>
+									<li><a href="produitsAnimation.php"> mascottes</a></li>
+									<li><a href="produitsAnimation.php"> maquillage enfant</a></li>
+									<li><a href="produitsAnimation.php"> princesses</a></li>
+									<li><a href="produitsAnimation.php"> sportif</a></li>
+									<li><a href="produitsAnimation.php"> structures gonflables</a></li>
 								</ul>	
 							</div>							
 						</div>

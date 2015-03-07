@@ -14,11 +14,7 @@
 							<i class="user"></i>
 							<a href="account.html">Mon compte</a>
 						</li>
-						<li class="login">
-							<i class="lock"></i>
-							<a href="login.html">Se connecter</a>|
-							<a href="login.html">S'identifier</a>			
-						</li>
+		
 						<li>
 							<i class="cart"></i>
 							<a href="#">Mon Panier</a>
