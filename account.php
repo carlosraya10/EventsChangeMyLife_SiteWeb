@@ -78,7 +78,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			   <div class="col-md-6 login-left">
 			  	 <h3>DEVENIR MEMBRE GRATUITEMENT</h3>
 				 <p>Créer un compte sur notre portail vous permet d'effectuer le paiement plus rapide, stocker des adresses d'expédition multiples, consulter et suivre vos commandes dans votre compte et plus encore.</p>
-				 <a class="acount-btn" href="register.php">Creer un compte</a>
+				 <a class="acount-btn" href="enregistrer.php">Creer un compte</a>
 			   </div>
 			   <div class="col-md-6 login-right">
 			  	<h3>SE CONNECTER</h3>
@@ -101,11 +101,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 </div>
 		   </div>
 </div>
-	</div>
 	
 	<!-- footer -->
 	 <?php include("footer.php") ?>
 	 
-	 
+	</div>
+		 
 </body>
 </html>

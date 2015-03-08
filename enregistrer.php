@@ -76,7 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="content">
 		<div class="pag-nav">
 			<ul class="p-list">
-				<li><a href="index.html">Home</a></li> &nbsp;&nbsp;/&nbsp;
+				<li><a href="index.php">Home</a></li> &nbsp;&nbsp;/&nbsp;
 				<li class="act">&nbsp;Register</li>
 			</ul>
 		</div>

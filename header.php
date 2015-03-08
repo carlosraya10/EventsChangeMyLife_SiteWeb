@@ -12,7 +12,7 @@
 					<ul>
 						<li>
 							<i class="user"></i>
-							<a href="account.html">Mon compte</a>
+							<a href="account.php">Espace Client</a>
 						</li>
 		
 						<li>
@@ -28,7 +28,7 @@
 		<div class="wrap">
 			<div class="header-bottom">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" style=" opacity: 0.1;" /></a>
+					<a href="index.php"><img src="images/logo.png" class="img-responsive" alt="" style=" opacity: 0.1;" /></a>
 				</div>
 				<div class="search">
 					<div class="search2">

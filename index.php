@@ -11,8 +11,7 @@
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="BOX SHOP Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content="ECL ... " />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -143,28 +142,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		   
 		   <div class="col-md-4 right-grid">
 				<div class="right-grid-top">
-					<div class="r-sale text-center">
-						<h6>Winter wear</h6>
-						<h2>Sale</h2>
-					</div>
-					<div class="r-discount">
-						<span>upto</span>
-						<h2>50%</h2>
-						<p>OFF</p>
-						<a href="#">shop now<i class="go"></i></a>
-					</div>
-					<div class="clearfix"></div>
+					<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
 				</div>
 				<div class="right-grid-bottom">
 					<div class="right-grid-bottom-left">
-						<h3>Deal of the Day</h3>
-						<p>Expires in 3:42:56</p>
-						<h5>Wireless Headphones</h5>
-						<h2>Extra 33% OFF</h2>
-						<a href="single.html">shop now<i class="go"></i></a>
+						<h3>JEU CONCOURS</h3>
+						<p>Valable 3:42:56</p>
+						<h5>Quizz</h5>
+						<h2>Inscription gratuite</h2>
+						<a href="single.html">Je m'inscris<i class="go"></i></a>
 					</div>
 					<div class="right-grid-bottom-right">
-						<img src="images/headset.png" alt="" />
+						<img src="images/jeu_concours.png" alt="" />
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -300,10 +289,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="clearfix"></div>
 		</div>
+		
+		<!-- footer --> 
+		<?php include("footer.php") ?>
+		
 	  </div>
-
-	<!-- footer --> 
-	<?php include("footer.php") ?>
 	
 </body>
 </html>

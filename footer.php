@@ -16,7 +16,7 @@
 					<h3>Abonnez-vous</h3>
 					<p>Recevez les news des toutes les fêtes ...</p>
 					<input type="text" class="text" value="" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = '';}">
-					<input type="submit" value="Subscribe">
+					<input type="submit" value="Souscrire">
 				</div>
 				<div class="col-md-4 help text-right">
 					<h3>Besoin d'aide ?</h3>
@@ -28,7 +28,7 @@
 			
 				<div class="about-text text-right">
 					<h4>Events Change Life</h4>
-					<p> Une plateforme centrale de réservation destinée à l'événementiel pour permettre aux professionnels et aux amateurs de mettre en avant leurs compétences ou services afin de se faire valoir. </p>
+					<p> Plateforme centrale de réservation destinée à l'événementiel permettant aux professionnels et aux amateurs de mettre en avant leurs compétences/services afin de se faire valoir. </p>
 				</div>
 				<div class="clearfix"></div>
 			</div>

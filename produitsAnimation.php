@@ -102,34 +102,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     	</div>
 	      <div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="single.html"><img src="images/new-pic3.jpg" alt="" /></a>
+					 <a href="single.html"><img src="images/animateur_micro.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					 <p><span class="price">$505.22</span></p>
+					 <p><span class="price">505.22 €</span></p>
 					  <div class="button"><span><img src="images/cart.jpg" alt="" /><a href="single.html" class="cart-button">Ajouter au panier</a></span> </div>
 				     <div class="button"><span><a href="single.html" class="details">Détails</a></span></div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="single.html"><img src="images/feature-pic2.jpg" alt="" /></a>
+					<a href="single.html"><img src="images/animateur_micro.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					 <p><span class="price">$620.87</span></p>
+					 <p><span class="price">620.87 €</span></p>
 				     <div class="button"><span><img src="images/cart.jpg" alt="" /><a href="single.html" class="cart-button">Ajouter au panier</a></span> </div>
 				     <div class="button"><span><a href="single.html" class="details">Détails</a></span></div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="single.html"><img src="images/feature-pic3.jpg" alt="" /></a>
+					<a href="single.html"><img src="images/animateur_micro.jpg" alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					 <p><span class="price">$220.97</span></p>
+					 <p><span class="price">220.97 €</span></p>
 				      <div class="button"><span><img src="images/cart.jpg" alt="" /><a href="single.html" class="cart-button">Ajouter au panier</a></span> </div>
 				     <div class="button"><span><a href="single" class="details">Détails</a></span></div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="single.html"><img src="images/new-pic2.jpg" alt="" /></a>
+					<a href="single.html"><img src="images/animateur_micro.jpg"  alt="" /></a>
 					 <h2>Lorem Ipsum is simply </h2>
 					 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-					 <p><span class="price">$415.54</span></p>
+					 <p><span class="price">415.54 €</span></p>
 				      <div class="button"><span><img src="images/cart.jpg" alt="" /><a href="single.html" class="cart-button">Ajouter au panier</a></span> </div>
 				     <div class="button"><span><a href="single.html" class="details">Détails</a></span></div>
 				</div>
@@ -138,54 +138,47 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	  
 			<div class="section group">
 				<div class="grid_1_of_4 images_1_of_4">
-					 <a href="single.html"><img src="images/new-pic1.jpg" alt="" /></a>
-					 <div class="discount">
-					 <span class="percentage">40%</span>
-					</div>
+					 <a href="single.html"><img src="images/animateur_micro.jpg" alt="" /></a>
+					 
 					 <h2>Lorem Ipsum is simply </h2>
-					 <p><span class="price">$403.66</span></p>
+					 <p><span class="price">403.66 €</span></p>
 				     <div class="button"><span><img src="images/cart.jpg" alt="" /><a href="single.html" class="cart-button">Ajouter au panier</a></span> </div>
 				     <div class="button"><span><a href="single.html" class="details">Détails</a></span></div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="single.html"><img src="images/new-pic2.jpg" alt="" /></a>
-					 <div class="discount">
-					 <span class="percentage">22%</span>
-					</div>
+					<a href="single.html"><img src="images/animateur_micro.jpg" alt="" /></a>
+					
 					 <h2>Lorem Ipsum is simply </h2>
-					 <p><span class="price">$621.75</span></p>
+					 <p><span class="price">621.75 €</span></p>
 				      <div class="button"><span><img src="images/cart.jpg" alt="" /><a href="single.html" class="cart-button">Ajouter au panier</a></span></div>
 				     <div class="button"><span><a href="single.html" class="details">Détails</a></span></div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-					<a href="single.html"><img src="images/feature-pic2.jpg" alt="" /></a>
-					<div class="discount">
-					 <span class="percentage">55%</span>
-					</div>
+					<a href="single.html"><img src="images/animateur_micro.jpg" alt="" /></a>
+					
 					 <h2>Lorem Ipsum is simply </h2>
-					 <p><span class="price">$428.02</span></p>
+					 <p><span class="price">428.02 €</span></p>
 				      <div class="button"><span><img src="images/cart.jpg" alt="" /><a href="single.html" class="cart-button">Ajouter au panier</a></span> </div>
 				     <div class="button"><span><a href="single.html" class="details">Détails</a></span></div>
 				</div>
 				<div class="grid_1_of_4 images_1_of_4">
-				 <a href="single.html"><img src="images/new-pic3.jpg" alt="" /></a>
-				  <div class="discount">
-					 <span class="percentage">66%</span>
-				  </div>
-					 <h2>Lorem Ipsum is simply </h2>					 
-					 <p><span class="strike">$643.22</span><span class="price">$457.88</span></p>
+				 <a href="single.html"><img src="images/animateur_micro.jpg" alt="" /></a>
+				 	 <h2>Lorem Ipsum is simply </h2>					 
+					 <p><span class="price">457.88 €</span></p>
 				      <div class="button"><span><img src="images/cart.jpg" alt="" /><a href="single.html" class="cart-button">Ajouter au panier</a></span> </div>
 				     <div class="button"><span><a href="single.html" class="details">Détails</a></span></div>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	</div>
-	
+		
 		<!-- slider avec les prestataires payant leur pub -->
 		<?php include("listProduitsPubPayee.php") ?>
 		
     <!-- footer -->
 	 	<?php include("footer.php") ?>
+	</div>
+	
+		
 </body>
 </html>
