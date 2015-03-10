@@ -101,11 +101,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 </div>
 		   </div>
 </div>
-	
+		</div>
 	<!-- footer -->
 	 <?php include("footer.php") ?>
 	 
-	</div>
+
 		 
 </body>
 </html>

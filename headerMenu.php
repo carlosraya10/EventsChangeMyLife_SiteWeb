@@ -143,11 +143,11 @@
 								<ul>
 									<li><a href="products.html"> feu d'artifice</a></li>									
 									<li><a href="products.html"> imprimerie</a></li>
-									<li><a href="products.html"> location salle</a></li>									
+																		
 									<li><a href="products.html"> photographe</a></li>
 									<li><a href="products.html"> sécurité</a></li>
 									<li><a href="products.html"> son & lumière</a></li>
-									<li><a href="products.html"> vehicules</a></li>								
+															
 								</ul>	
 							</div>							
 						</div>
@@ -156,15 +156,19 @@
 			</li>		
 			
 			
-			<li class="grid"><a class="color7" href="#">unknown</a>
+			<li class="grid"><a class="color7" href="#">Locations</a>
 				<div class="megapanel">
 					<div class="row">
 						<div class="col1">
 							<div class="h_nav">
-								<h4> ---------- </h4>
+								<h4>Locations</h4>
 								<ul>
-									
-									</ul>
+									<li><a href="products.html"> Location salle</a></li>
+									<li><a href="products.html"> Location de chapiteau</a></li>
+									<li><a href="products.html"> Location de mobilier</a></li>
+									<li><a href="products.html"> Location de sono</a></li>
+									<li><a href="products.html"> Location de vehicules</a></li>	
+								</ul>
 							</div>							
 						</div>
 					</div>

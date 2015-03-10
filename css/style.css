@@ -2397,7 +2397,7 @@ div.register-bottom-grid {
 }
 .span1_of_1_des{
 	float: right;
-	width: 60%;
+	width: 53%;
 }
 /* start desc1 */
 .desc1 {
@@ -2514,7 +2514,7 @@ div.register-bottom-grid {
 	text-shadow: 0 1px 0 #ffffff;
 }
 .available li {
-	display: inline;
+	display: inline-block;
 	font-size: 1em;
 	padding: 1.5% 2%;
 	color: #555555;

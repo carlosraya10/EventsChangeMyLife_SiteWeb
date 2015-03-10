@@ -174,10 +174,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		
 		<!-- slider avec les prestataires payant leur pub -->
 		<?php include("listProduitsPubPayee.php") ?>
+		</div>
 		
     <!-- footer -->
 	 	<?php include("footer.php") ?>
-	</div>
+	
 	
 		
 </body>

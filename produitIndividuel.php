@@ -95,11 +95,11 @@
 							</li>
 							<li>
 								<img class="etalage_thumb_image" src="images/d3.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" src="images/d3.jpg"class="img-responsive"  />
+								<img class="etalage_source_image"src="images/d3.jpg" class="img-responsive"  />
 							</li>
 						    <li>
 								<img class="etalage_thumb_image" src="images/d4.jpg" class="img-responsive"  />
-								<img class="etalage_source_image" src="images/d4.jpg"class="img-responsive"  />
+								<img class="etalage_source_image" src="images/d4.jpg" class="img-responsive"  />
 							</li>
 						</ul>
 						 <div class="clearfix"></div>		
@@ -110,76 +110,48 @@
 				  <div class="desc1">
 					<h3>Lorem Ipsum is simply dummy text </h3>
 					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-					<h5>Rs. 399 <a href="#">click for offer</a></h5>
+					<h5>125 € <a href="#">Partager</a></h5>
 					<div class="available">
-						<h4>Available Options :</h4>
+						<h4>Détails :</h4>
 						<ul>
-							<li>Color:
+							<li>Disponibilité:						
 								<select>
-								<option>Silver</option>
-								<option>Black</option>
-								<option>Dark Black</option>
-								<option>Red</option>
-							</select></li>
-							<li>Size:
-								<select>
-									<option>L</option>
-									<option>XL</option>
-									<option>S</option>
-									<option>M</option>
+								<option>Vendredi</option>
+								<option>Samedi</option>
+								<option>Dimanche</option>
+								
 								</select>
-							</li>
-							<li>Quality:
+							
+								</li>
+							<li>Deplacement:
+							
 								<select>
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
+									<option>Gratuit (&lt;25 km) </option>
+									<option>12 € (25km - 50km)</option>
+									<option>75 € (50km - 100km)</option>
+									<option>impossible (&gt;100 km)</option>
 								</select>
+								
 							</li>
+							
 						</ul>
 						<div class="btn_form">
 							<form>
-								<input type="submit" value="add to cart" title="" />
+								<input type="submit" value="Ajouter au panier" title="" />
 							</form>
 						</div>
-						<span class="span_right"><a href="#">login to save in wishlist </a></span>
+						<span class="span_right"><a href="#">Identifiez-vous pour reserver </a></span>
 						<div class="clearfix"></div>
 					</div>
 					<div class="filter-by-color">
-				<h3>Filter by Color</h3>
-				<ul class="w_nav2">
-				<li><a class="color1" href="#"></a></li>
-				<li><a class="color2" href="#"></a></li>
-				<li><a class="color3" href="#"></a></li>
-				<li><a class="color4" href="#"></a></li>
-				<li><a class="color5" href="#"></a></li>
-				<li><a class="color10" href="#"></a></li>
-				<li><a class="color7" href="#"></a></li>
-				<li><a class="color8" href="#"></a></li>
-				<li><a class="color9" href="#"></a></li>
-				<li><a class="color10" href="#"></a></li>
-				<li><a class="color6" href="#"></a></li>
-				<li><a class="color13" href="#"></a></li>
-				<li><a class="color14" href="#"></a></li>
-				<li><a class="color15" href="#"></a></li>
-				<li><a class="color16" href="#"></a></li>
-				<li><a class="color17" href="#"></a></li>
-				<li><a class="color1" href="#"></a></li>
-				<li><a class="color3" href="#"></a></li>
-				<li><a class="color2" href="#"></a></li>
-			</ul>
-
+				
 			</div>
 			
 			   	 </div>
 			   	</div>
 					<div class="clearfix"></div>
-				</div>
-				
-			
-			 
+				</div>		
+		 
 			   	</div>
 
 	<div class="sub-cate single-subcate">
@@ -220,10 +192,11 @@
 	 <div class="clearfix"> </div>
 </div>
 </div>
-	<!-- footer -->
-	
+</div>
+
+	<!-- footer -->	
 	<?php include("footer.php") ?>
-</div>	
+	
 	
 </body>
 </html>
