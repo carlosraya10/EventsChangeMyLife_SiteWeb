@@ -10,16 +10,32 @@
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="BOX SHOP Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<meta name="keywords" content="ECL platforme de reservation en ligne ... " />
+<script type="application/x-javascript"> 
+	addEventListener("load", function() 
+	{ 
+		setTimeout(hideURLbar, 0);
+	}, false); 
+	
+	function hideURLbar(){
+		 window.scrollTo(0,1); 
+	} 
+</script>
+
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
 <!-- start menu -->
 <link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
 <script type="text/javascript" src="js/megamenu.js"></script>
-<script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
+<script>
+	$(document).ready(function()
+	{
+		$(".megamenu").megamenu();
+	});
+</script>
+
 <!-- start slider -->
 <script src="js/responsiveslides.min.js"></script>
  <script>
@@ -33,8 +49,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     });
   </script>
 <!--end slider -->
+
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-				<script type="text/javascript">
+		<script type="text/javascript">
 			$(window).load(function() {
 				$("#flexiselDemo").flexisel({
 					visibleItems: 5,
@@ -63,10 +80,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 </head>
+
 <body>
 	<!-- header-section-starts -->
 		<?php include("header.php"); ?>
-	
+
 	<!-- header-section-ends -->
 		<?php include("headerMenu.php"); ?>
 	<div class="wrap">
@@ -177,9 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		
     <!-- footer -->
-	 	<?php include("footer.php") ?>
-	
-	
+	 	<?php include("footer.php") ?>	
 		
 </body>
 </html>

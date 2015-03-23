@@ -1,6 +1,7 @@
+
 <div class="wrap">
 		<div class="navigation-strip">
-			<h4>CatÈgories<i class="arrow"></i></h4>
+			<h4>Cat√©gories<i class="arrow"></i></h4>
 			<div class="top-menu">
 			
 <ul class="megamenu skyblue">
@@ -45,9 +46,9 @@
 							<div class="h_nav">
 								<h4>Acteurs</h4>
 								<ul>
-									<li><a href="products.html">comÈdiens</a></li>
+									<li><a href="products.html">com√©diens</a></li>
 									<li><a href="products.html">figurants</a></li>
-									<li><a href="products.html">thÈ‚tre</a></li>
+									<li><a href="products.html">th√®√¢tre</a></li>
 								</ul>	
 							</div>							
 						</div>
@@ -56,7 +57,7 @@
 								<h4>Danseur</h4>
 								<ul>
 									<li><a href="products.html"> africain</a></li>
-									<li><a href="products.html"> chorÈgraphe</a></li>
+									<li><a href="products.html"> chor√©graphe</a></li>
 									<li><a href="products.html"> country music</a></li>
 									<li><a href="products.html"> hip-hop</a></li>
 									<li><a href="products.html"> indou</a></li>
@@ -74,7 +75,7 @@
 									<li><a href="products.html"> clown</a></li>
 									<li><a href="products.html"> contorsionniste</a></li>
 									<li><a href="products.html"> cracheurs de feu</a></li>
-									<li><a href="products.html"> Èchassiers</a></li>
+									<li><a href="products.html"> √©chassiers</a></li>
 									<li><a href="products.html"> illusionniste</a></li>
 									<li><a href="products.html"> jongleur</a></li>
 									<li><a href="products.html"> mime</a></li>
@@ -108,7 +109,7 @@
 								<h4> Restauration </h4>
 								<ul>
 									<li><a href="products.html"> boulanger</a></li>
-									<li><a href="products.html"> p‚tissier</a></li>
+									<li><a href="products.html"> patissier</a></li>
 									<li><a href="products.html"> serveur</a></li>
 									<li><a href="products.html"> traiteur</a></li>
 								</ul>	
@@ -128,7 +129,7 @@
 						
 						<div class="col1">
 							<div class="h_nav">
-								<h4> EsthÈtique </h4>
+								<h4> Esth√®tique </h4>
 								<ul>
 									<li><a href="products.html"> coiffure</a></li>
 									<li><a href="products.html"> maquillage adultes</a></li>
@@ -145,8 +146,8 @@
 									<li><a href="products.html"> imprimerie</a></li>
 																		
 									<li><a href="products.html"> photographe</a></li>
-									<li><a href="products.html"> sÈcuritÈ</a></li>
-									<li><a href="products.html"> son & lumiËre</a></li>
+									<li><a href="products.html"> s√©curit√©</a></li>
+									<li><a href="products.html"> son & lumi√©re</a></li>
 															
 								</ul>	
 							</div>							
@@ -209,4 +210,5 @@
 			</div>
 		<div class="clearfix"></div>
 </div>
+
 	

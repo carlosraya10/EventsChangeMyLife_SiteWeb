@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -292,8 +291,7 @@
 		
 	  </div>
 		<!-- footer --> 
-		<?php include("footer.php") ?>
-		
+		<?php include("footer.php") ?>		
 		
 </body>
 </html>
