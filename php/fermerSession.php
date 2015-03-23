@@ -2,8 +2,8 @@
 	require_once("sesion.class.php");
 	
 	$sesion = new sesion();
-	$usuario = $sesion->get("usuario");	
-	if( $usuario == false )
+	$user = $sesion->get("user");	
+	if( $user == false ) //S'il n'y a pas une session active, alors déconnecter pour que personne ne puisse pas regarder le code écrit ici
 	{	
 		?><script languaje="javascript">
       		alert( "Deconnecté(e)" );
@@ -11,8 +11,8 @@
       	</script><?php
     }
 	else 
-	{
-		$usuario = $sesion->get("usuario");	
+	{ //Si l'utilisateur il existe, alors fermer la session
+		$user = $sesion->get("user");	
 		$sesion->termina_sesion();
 		?><script languaje="javascript">
       		alert( "Deconnecté(e)" );

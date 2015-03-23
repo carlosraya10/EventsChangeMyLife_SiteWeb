@@ -1,48 +1,5 @@
 <?php
-require_once("sesion.class.php");
-$sesion = new sesion();
-$msg = "";
-
-if( isset($_POST["btnOk"]) )
-{
-		
-	$usuario = $_POST["usuario"];
-	$password = $_POST["contrasenia"];
-	
-	if(validarUsuario($usuario,$password) == true)
-	{			
-		$sesion->set("usuario",$usuario);
-		
-		header("location: principal.php");
-	}
-	else
-	{
-		//echo "Le mot de passe et/ou l'utilisateur sont incorrects";
-		$msg = "Le mot de passe et/ou l'utilisateur sont incorrects. Veuillez ressayer.";
-	}
-}
-
-
-
-function validarUsuario($usuario, $password)
-{
-	$conexion = new mysqli("localhost","root","","EVENTSCHANGELIFE");
-
-	$consulta = "select pass from PEOPLE where username = '$usuario';";
-	
-	$result = $conexion->query($consulta);
-	
-	if($result->num_rows > 0)
-	{
-		$fila = $result->fetch_assoc();
-		if( strcmp($password,$fila["pass"]) == 0 )
-			return true;
-		else
-			return false;
-	}
-	else
-		return false;
-}
+require_once("login.php");
 ?>
 
 
@@ -118,7 +75,7 @@ function validarUsuario($usuario, $password)
 	
 	<div class="wrap">
 		<!-- start header menu -->
-		<?php include("Menu.php"); ?>
+		<!-- ?php include("Menu.php"); ?> -->
 
 		<!-- start account -->
 		<div class="login-page">
@@ -127,7 +84,7 @@ function validarUsuario($usuario, $password)
 			   <div class="col-md-6 login-left">
 			  	 <h3>DEVENIR MEMBRE GRATUITEMENT</h3>
 				 <p>Créer un compte sur notre portail vous permet d'effectuer le paiement plus rapide, stocker des adresses d'expédition multiples, consulter et suivre vos commandes dans votre compte et plus encore.</p>
-				 <a class="acount-btn" href="enregistrer.php">Creer un compte</a>
+				 <a class="acount-btn" href="SignUp.php">Creer un compte</a>
 			   </div>
 			   <div class="col-md-6 login-right">
 			  	<h3>SE CONNECTER</h3>
@@ -140,12 +97,12 @@ function validarUsuario($usuario, $password)
 				  		alert("<?= $msg ?>");
 				  	}
 				  </script>
-					<span>utilisateur*</span>
-					<input type="text" size="40" name="usuario" value="" id="usuario" placeholder="Votre login" autofocus required />
+					<span>Utilisateur*</span>
+					<input type="text" size="40" name="user" value="" id="user" placeholder="Votre login" autofocus required />
 				  </div>
 				  <div>
 					<span>Mot de passe*</span>
-					<input type="password" size="40" autocomplete="off" name="contrasenia" value="" id="contrasenia" placeholder="Mot de passe" required />
+					<input type="password" size="40" autocomplete="off" name="pass" value="" id="pass" placeholder="Mot de passe" required />
 				  </div>
 				  <p class="required">* Champs obligatoires</p>
 				  <a class="forgot" href="#">Mot De Passe Oublié?</a>
