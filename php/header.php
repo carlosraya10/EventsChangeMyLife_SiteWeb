@@ -12,23 +12,24 @@
 					<ul>
 						<li>
 							<i class="user"></i>
-							<a href="account.php">Espace Client</a>
+							<a href="account.php">Espace client</a>
 						</li>
-		
 						<li>
 							<i class="cart"></i>
 							<a href="#">Mon Panier</a>
 						</li>
 						<li class="last">5</li>
-					</ul>
-					
+					</ul>					
+				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
+			
 		<div class="wrap">
 			<div class="header-bottom">
 				<div class="logo">
-					<a href="index.php"><img src="images/logo.png" class="img-responsive" alt="" style=" opacity: 0.1;" /></a>
+					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+					<a href="index.html"><img src="../images/logo.png" class="img-responsive" alt="" /></a>
 				</div>
 				<div class="search">
 					<div class="search2">
@@ -41,5 +42,5 @@
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	</div>
+	</div>	
 	<!-- header-section-ends -->
