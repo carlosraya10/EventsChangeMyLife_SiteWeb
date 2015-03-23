@@ -11,10 +11,6 @@
 				<div class="header-right">
 					<ul>
 						<li>
-							<i class="user"></i>
-							<a href="php/account.php">Espace client</a>
-						</li>
-						<li>
 							<i class="cart"></i>
 							<a href="#">Mon Panier</a>
 						</li>

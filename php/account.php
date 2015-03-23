@@ -113,7 +113,7 @@ function validarUsuario($usuario, $password)
 		<script type="text/javascript" src="../js/jquery.flexisel.js"></script>
 </head>
 <body>
-	<?php include("header.php"); ?>
+	<?php include("header_account.php"); ?>
 	
 	
 	<div class="wrap">
