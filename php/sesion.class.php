@@ -13,10 +13,10 @@ class sesion {
          return false;
      }
   }
-  public function elimina_variable($name) {
+  public function delete_variable($name) {
       unset ( $_SESSION [$name] );
   }
-  public function termina_sesion() {
+  public function end_sesion() {
       $_SESSION = array();
       session_destroy ();
   }

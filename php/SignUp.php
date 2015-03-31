@@ -63,6 +63,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		</script>
 		<script type="text/javascript" src="../js/jquery.flexisel.js"></script>
+
+<script type="text/javascript">
+	    function checkPassword(){
+            password1 = document.form1.password1.value
+            password2 = document.form1.password2.value
+     
+            if (password1 == password2){
+                alert("Compte crée avec succès!");
+                return true;
+            }
+            else{
+                alert("Les mots de passe ne sont pas pareils. Merci de les vérifier.");
+                return false;          
+            }
+    }
+</script>
 </head>
 <body>
 	<!-- header-section-starts -->
@@ -85,56 +101,62 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorp uspendisse a pellentesque.</p>
 		</div>
 		<div class="register">
-	  	  <form> 
+		<div class="register-but">
+	  	  <form name="form1" onsubmit="return checkPassword();" ACTION="MySQL/prueba.php" METHOD="GET"> 
 			 <div class="register-top-grid">
 			
 				 <div>
-					<span>Nom</span>
-					<input type="text"> 
+					<span>Nom*</span>
+					<input type="text" name="nom" value="" id="nom" placeholder="" autofocus required /> 
 				 </div>
 				 <div>
-					<span>Prenom</span>
-					<input type="text"> 
+					<span>Prenom*</span>
+					<input type="text" name="prenom" value="" id="prenom" placeholder="" required /> 
 				 </div>
 				 <div>
-					 <span>Adresse e-mail</span>
-					 <input type="text"> 
+					 <span>Adresse e-mail*</span>
+					 <input type="text" name="email" value="" id="email" placeholder="MonAdresseEmail@MonDomaine.com" required /> 
+				 </div>
+				 <div>
+					 <span>Nom d'utilisateur*</span>
+					 <input type="text" name="utilisateur" value="" id="utilisateur" placeholder="" required /> 
 				 </div>
 				  <div class="clearfix"></div>
-		  </div>			  
-			
+		  </div>
 				 
-				  <div class="clearfix"></div>
-				 <div class="sgn">
-				 <input type="checkbox" name="is_subscribed" title="Sign Up for Newsletter" value="1" id="is_subscribed" class="checkbox"/>
-					<label for="is_subscribed">Inscrivez-vous à la newsletter</label>
-<div class="clearfix"></div>
-				  </div>
+			<div class="clearfix"></div>
+				<div class="sgn">
+				<label for="sexe">Homme</label><input type="radio" name="sexe" title="Male" value="1" id="sexe" class="radio" required/>
+				</div>
+				<div class="sgn">
+				<label for="sexe">Femme</label><input type="radio" name="sexe" title="Female" value="2" id="sexe" class="radio" required/>
+				</div>
+			<div class="clearfix"></div>
 			     <div class="register-bottom-grid">
 					  
 						 <div>
-							<span>Créez un mot de passe</span>
-							<input type="password">
+							<span>Créez un mot de passe*</span>
+							<input type="password" name="password1" id="password1" required />
 						 </div>
 						 <div>
-							<span>Confirmez votre mot de passe</span>
-							<input type="password">
+							<span>Confirmez votre mot de passe*</span>
+							<input type="password" name="password2" id="password2" required />
 						 </div>
 				 </div>
+				 <input type="submit" value="Valider">
+				   	<div class="clearfix"> </div>
 			</form>
+		</div>
 			<div class="clearfix"> </div>
 			<div class="register-but">
-			   <form>
-				   <input type="submit" value="Valider">
-				   <div class="clearfix"> </div>
-			   </form>
 			   <a href="../index.php">Annuler<i class="go"></i></a>
+			   <br/>
+			   <p>* Champs obligatoires.</p>
 			</div>
 	   </div>
 	</div>
 	</div>
 	</div>
-	 
 		</div>
 	 </div>
 </body>

@@ -12,8 +12,8 @@
     }
 	else 
 	{ //Si l'utilisateur il existe, alors fermer la session
-		$user = $sesion->get("user");	
-		$sesion->termina_sesion();
+		$sesion->delete_variable($user);
+		$sesion->end_sesion();
 		?><script languaje="javascript">
       		alert( "Deconnecté(e)" );
       		location.href = "../index.php";

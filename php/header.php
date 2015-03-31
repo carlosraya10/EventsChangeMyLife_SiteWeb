@@ -12,7 +12,7 @@
 					<ul>
 						<li>
 							<i class="user"></i>
-							<a href="php/account.php">Espace client</a>
+							<a href="php/account.php">Mon espace client</a>
 						</li>
 						<li>
 							<i class="cart"></i>
