@@ -1,39 +1,45 @@
 <?php
 require_once("sesion.class.php");
 $sesion = new sesion();
+$msg = "";
 
 if( isset($_POST["btnOk"]) )
 {
 		
-	$usuario = $_POST["usuario"];
-	$password = $_POST["contrasenia"];
+	$user = $_POST["user"];
+	$password = $_POST["pass"];
 	
-	if(validarUsuario($usuario,$password) == true)
+	if(checkUser($user,$password) == true)
 	{			
-		$sesion->set("usuario",$usuario);
+		$sesion->set("user",$user);
 		
 		header("location: principal.php");
 	}
 	else
 	{
-		echo "Le mot de passe et/ou l'utilisateur sont incorrects";
+		//echo "Le mot de passe et/ou l'utilisateur sont incorrects";
+		$msg = "Le mot de passe et/ou l'utilisateur sont incorrects. Veuillez ressayer.";
 	}
 }
 
 
 
-function validarUsuario($usuario, $password)
+function checkUser($user, $password)
 {
+<<<<<<< HEAD
 	$conexion = new mysqli("localhost","root","root","EVENTSCHANGELIFE");
 
 	$consulta = "select pass from PEOPLE where email = '$usuario';";
 	
+=======
+	$conexion = new mysqli("localhost","root","","EVENTSCHANGELIFE");
+	$consulta = "select pass from PEOPLE where username = '$user' or email = '$user';";
+>>>>>>> origin/master
 	$result = $conexion->query($consulta);
-	
 	if($result->num_rows > 0)
 	{
 		$fila = $result->fetch_assoc();
-		if( strcmp($password,$fila["pass"]) == 0 )
+		if( strcmp($password,$fila["pass"]) == 0)
 			return true;
 		else
 			return false;
@@ -41,6 +47,7 @@ function validarUsuario($usuario, $password)
 	else
 		return false;
 }
+<<<<<<< HEAD
 ?>
 
 <!DOCTYPE html> 
@@ -65,3 +72,6 @@ function validarUsuario($usuario, $password)
 		</section> 
 	</body> 
 </html>
+=======
+?>
+>>>>>>> origin/master

@@ -34,6 +34,7 @@
 			</div>
 			<div class="cards text-center">
 				<img src="images/cards.jpg" alt="" />
+				<img src="../images/cards.jpg" alt="" />
 			</div>
 			<div class="copyright text-center">
 				<p>Copyright &copy; 2015 All rights reserved | ECL </p>

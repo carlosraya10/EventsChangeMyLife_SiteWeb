@@ -3,20 +3,20 @@ class sesion {
   function __construct() {
      session_start ();
   }
-  public function set($nombre, $valor) {
-     $_SESSION [$nombre] = $valor;
+  public function set($name, $value) {
+     $_SESSION [$name] = $value;
   }
-  public function get($nombre) {
-     if (isset ( $_SESSION [$nombre] )) {
-        return $_SESSION [$nombre];
+  public function get($name) {
+     if (isset ( $_SESSION [$name] )) {
+        return $_SESSION [$name];
      } else {
          return false;
      }
   }
-  public function elimina_variable($nombre) {
-      unset ( $_SESSION [$nombre] );
+  public function delete_variable($name) {
+      unset ( $_SESSION [$name] );
   }
-  public function termina_sesion() {
+  public function end_sesion() {
       $_SESSION = array();
       session_destroy ();
   }
