@@ -24,9 +24,9 @@ if( isset($_POST["btnOk"]) )
 
 function validarUsuario($usuario, $password)
 {
-	$conexion = new mysqli("localhost","root","","EVENTSCHANGELIFE");
+	$conexion = new mysqli("localhost","root","root","EVENTSCHANGELIFE");
 
-	$consulta = "select pass from PEOPLE where username = '$usuario';";
+	$consulta = "select pass from PEOPLE where email = '$usuario';";
 	
 	$result = $conexion->query($consulta);
 	
@@ -50,7 +50,7 @@ function validarUsuario($usuario, $password)
 		<link href="css/styles.css" type="text/css" rel="stylesheet" /> 
 		<title>Administration</title> 
 	</head> 
-	<body onload="window.document.getElementById('saiLogin').focus();"> 
+	<body onLoad="window.document.getElementById('saiLogin').focus();"> 
 		<section id="frmSection"> 
 		<form name="frmLogin" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="identfrm" autocomplete="on"> 
 			<fieldset> 
