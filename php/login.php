@@ -26,8 +26,10 @@ if( isset($_POST["btnOk"]) )
 
 function checkUser($user, $password)
 {
-	$conexion = new mysqli("localhost","root","","EVENTSCHANGELIFE");
+
+	$conexion = new mysqli("localhost","root","root","EVENTSCHANGELIFE");
 	$consulta = "select pass from PEOPLE where username = '$user' or email = '$user';";
+
 	$result = $conexion->query($consulta);
 	if($result->num_rows > 0)
 	{
