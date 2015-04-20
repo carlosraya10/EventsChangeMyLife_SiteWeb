@@ -83,10 +83,10 @@
 
 <body>
 	<!-- header-section-starts -->
-		<?php include("php/header.php"); ?>
+		<?php include("header.php"); ?>
 
 	<!-- header-section-ends -->
-		<?php include("php/Menu.php"); ?>
+		<?php include("headerMenu.php"); ?>
 	<div class="wrap">
 		<div class="clearfix"></div>
 		</div>
