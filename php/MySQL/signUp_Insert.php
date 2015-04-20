@@ -16,7 +16,7 @@
 	    $servername = "localhost";
 	    $username = "root";
 	    $password = "";
-	    $dbname = "td_php";
+	    $dbname = "eventschangeife";
 
 	    $conn = new mysqli($servername, $username, $password, $dbname);
 	    // Check connection

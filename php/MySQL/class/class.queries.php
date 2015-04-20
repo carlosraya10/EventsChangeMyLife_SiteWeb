@@ -37,7 +37,7 @@ class connectorDB extends configuration //clase principal de conexion y consulta
 				$statement->closeCursor();
 			}
 			catch(PDOException $e){
-				echo "Error de ejecución: \n";
+				echo "Erreur d'execution: \n";
 				print_r($e->getMessage());
 			}	
 		}
