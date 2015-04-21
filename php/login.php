@@ -26,16 +26,12 @@ if( isset($_POST["btnOk"]) )
 
 function checkUser($user, $password)
 {
-<<<<<<< HEAD
-	$conexion = new mysqli("localhost","root","root","EVENTSCHANGELIFE");
-
-	$consulta = "select pass from PEOPLE where email = '$usuario';";
 	
-=======
+
 	$conexion = new mysqli("localhost","root","","EVENTSCHANGELIFE");
-	$consulta = "select pass from PEOPLE where username = '$user' or email = '$user';";
->>>>>>> origin/master
-	$result = $conexion->query($consulta);
+	$query1 = "select pass from PEOPLE where username = '$user' or email = '$user';";
+
+	$result = $conexion->query($query1);
 	if($result->num_rows > 0)
 	{
 		$fila = $result->fetch_assoc();
@@ -47,31 +43,5 @@ function checkUser($user, $password)
 	else
 		return false;
 }
-<<<<<<< HEAD
-?>
 
-<!DOCTYPE html> 
-<html lang = "fr">
-	<head> 
-		<meta charset = "UTF-8 " /> 
-		<link href="css/styles.css" type="text/css" rel="stylesheet" /> 
-		<title>Administration</title> 
-	</head> 
-	<body onLoad="window.document.getElementById('saiLogin').focus();"> 
-		<section id="frmSection"> 
-		<form name="frmLogin" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="identfrm" autocomplete="on"> 
-			<fieldset> 
-				<legend id="mainLegend">IDENTIFICATION REQUISE</legend> 
-				<label for="saiLogin">Login/Nom d'utilisateur</label><br /> 
-				<input type="text" size="40" name="usuario" value="" id="usuario" placeholder="Votre login" autofocus required /><br /> 
-				<label for="saiPass">Pass/Mot de passe</label><br /> 
-				<input type="password" size="40" autocomplete="off" name="contrasenia" value="" id="contrasenia" placeholder="Mot de passe" required /><br /><br /> 
-				<input type="submit" name="btnOk" value="OK" id="btnOk" /> 
-			</fieldset> 
-		</form> 
-		</section> 
-	</body> 
-</html>
-=======
 ?>
->>>>>>> origin/master

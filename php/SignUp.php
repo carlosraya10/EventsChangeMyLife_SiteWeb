@@ -66,6 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <script type="text/javascript">
 	    function checkPassword(){
+
             password1 = document.form1.password1.value
             password2 = document.form1.password2.value
      
@@ -102,7 +103,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		<div class="register">
 		<div class="register-but">
-	  	  <form name="form1" onsubmit="return checkPassword();" ACTION="MySQL/prueba.php" METHOD="GET"> 
+	  	  <form name="form1" onsubmit="return checkPassword();" ACTION="MySQL/signUp_Insert.php" METHOD="GET"> 
 			 <div class="register-top-grid">
 			
 				 <div>
@@ -122,7 +123,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 <input type="text" name="utilisateur" value="" id="utilisateur" placeholder="" required /> 
 				 </div>
 				  <div class="clearfix"></div>
-		  </div>
+		     </div>
 				 
 			<div class="clearfix"></div>
 				<div class="sgn">
