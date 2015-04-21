@@ -26,20 +26,12 @@ if( isset($_POST["btnOk"]) )
 
 function checkUser($user, $password)
 {
-<<<<<<< HEAD
 	
 
 	$conexion = new mysqli("localhost","root","","EVENTSCHANGELIFE");
 	$query1 = "select pass from PEOPLE where username = '$user' or email = '$user';";
 
 	$result = $conexion->query($query1);
-=======
-
-	$conexion = new mysqli("localhost","root","root","EVENTSCHANGELIFE");
-	$consulta = "select pass from PEOPLE where username = '$user' or email = '$user';";
-
-	$result = $conexion->query($consulta);
->>>>>>> origin/master
 	if($result->num_rows > 0)
 	{
 		$fila = $result->fetch_assoc();
@@ -51,9 +43,5 @@ function checkUser($user, $password)
 	else
 		return false;
 }
-<<<<<<< HEAD
 
 ?>
-=======
-?>
->>>>>>> origin/master
