@@ -24,7 +24,7 @@
 		<div class="wrap">
 			<div class="header-bottom">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+				
 					<a href="index.html"><img src="../images/logo.png" class="img-responsive" alt="" /></a>
 				</div>
 				<div class="search">
