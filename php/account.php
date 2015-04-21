@@ -2,9 +2,6 @@
 require_once("login.php");
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
