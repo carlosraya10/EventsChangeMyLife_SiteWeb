@@ -2,9 +2,6 @@
 require_once("login.php");
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -92,11 +89,6 @@ require_once("login.php");
 				<form name="frmLogin" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="identfrm" autocomplete="on">
 				  <div>
 				  <p class="required"><?= $msg ?></p>
-				  <script type="text/javascript">
-				  	if ("<?= $msg ?>" != ""){
-				  		alert("<?= $msg ?>");
-				  	}
-				  </script>
 					<span>Utilisateur*</span>
 					<input type="text" size="40" name="user" value="" id="user" placeholder="Votre login" autofocus required />
 				  </div>

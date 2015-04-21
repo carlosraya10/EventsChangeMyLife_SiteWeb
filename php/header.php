@@ -29,7 +29,11 @@
 			<div class="header-bottom">
 				<div class="logo">
 					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+<<<<<<< HEAD
 					<!--<a href="index.html"><img src="../images/logo.png" class="img-responsive" alt="" /></a>-->
+=======
+				
+>>>>>>> origin/master
 				</div>
 				<div class="search">
 					<div class="search2">

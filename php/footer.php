@@ -33,7 +33,7 @@
 				<div class="clearfix"></div>
 			</div>
 			<div class="cards text-center">
-				<img src="images/cards.jpg" alt="" />
+				
 				<img src="../images/cards.jpg" alt="" />
 			</div>
 			<div class="copyright text-center">
