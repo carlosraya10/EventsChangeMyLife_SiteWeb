@@ -1,17 +1,17 @@
 <?php
 class SingletonPattern{
 	
-    // Contenedor de la instance del singleton
+    // Contient l'intance du Singleton
     private static $instance;
 	private $values = array();
 	private $dbh;
  
-    // Un constructor privado evita la creación de un nuevo objeto
+    // Un constructeur privé empêche la création d'un nouveau objet
     private function __construct() {
 		$this->dbh = new PDO("mysql:host=localhost;dbname=EVENTSCHANGELIFE", "root", "");
     }
  
-    // método singleton
+    // Méthode singleton
     public static function singleton()
     {
         if (!isset(self::$instance)) {
@@ -35,10 +35,12 @@ class SingletonPattern{
         }
 	}
    
-    // Evita que el objeto se pueda clonar
+    // Empêche que l'objet puisse se clôner
     public function __clone()
     {
         trigger_error('La clonation de cet objet ne se permet pas.', E_USER_ERROR);
     }
 }
+
+//From: http://uno-de-piera.com/el-patron-singleton-en-php/
 ?>

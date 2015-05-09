@@ -1,21 +1,19 @@
 <?php
-		//on créé la connexion
+		//On créé la connexion
        include 'Singleton_Database.class.php';
 
-       
-//accedemos al método singleton que es quién crea la instancia
-//de nuestra clase y así podemos acceder sin necesidad de 
-//crear nuevas instancias, lo que ahorra consumo de recursos
+//On accede à la méthode singleton qui va créer une instance de notre classe
 $newSingleton = SingletonPattern::singleton();
-//accedemos al método usuarios y los mostramos
+//on accede au méthode "query"
 $res = "SELECT * FROM people";
 $usuario = $newSingleton->query($res);
 
+//On montre tous les utilisateurs
 echo "On montre tous les utilisateurs <br/>";
 
 foreach ($usuario as $row):
   echo "<tr>";
-  echo "<td align='center'>".$row["id_people"]."</td><td align='center'>" . $row["fname"]."</td><td align='center'>" . $row["lname"]."</td><td align='center'>" . $row["email"]."</td><td align='center'>" . $row["sex"]. "</td><td align='center'>" . $row["username"]. "</td><td align='center'>" . $row["pass"]. "</td><td><a href='javascript:confirmar();'>Supprimer utilisateur</a></td>";
+  echo "<td align='center'>".$row["id_people"]."</td><td align='center'>" . $row["fname"]."</td><td align='center'>" . $row["lname"]."</td><td align='center'>" . $row["email"]."</td><td align='center'>" . $row["sex"]. "</td><td align='center'>" . $row["username"]. "</td><td align='center'>" . $row["pass"]. "</td>";
   echo "</tr>";
   echo "<br/>";
 endforeach;
