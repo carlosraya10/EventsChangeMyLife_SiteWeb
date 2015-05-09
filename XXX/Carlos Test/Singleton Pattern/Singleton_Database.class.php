@@ -1,35 +1,44 @@
 <?php
-        class Database
-        {
-            // Store the single instance of Database
-            private static $m_pInstance;
-
-            private $db_host='localhost';
-            private $db_user = 'root';
-            private $db_pass = '';
-            private $db_name = 'EVENTSCHANGELIFE';
-
-            // Private constructor to limit object instantiation to within the class
-            private function __construct() 
+class SingletonPattern{
+	
+    // Contenedor de la instance del singleton
+    private static $instance;
+	private $values = array();
+	private $dbh;
+ 
+    // Un constructor privado evita la creación de un nuevo objeto
+    private function __construct() {
+		$this->dbh = new PDO("mysql:host=localhost;dbname=EVENTSCHANGELIFE", "root", "");
+    }
+ 
+    // método singleton
+    public static function singleton()
+    {
+        if (!isset(self::$instance)) {
+            $myClass = __CLASS__;
+            self::$instance = new $myClass;
+        } 
+        return self::$instance;
+    }
+	
+	public function query($val)
+	{
+		$query = $this->dbh->prepare($val);
+		$query->execute();
+		if ($query->rowCount()>0) 
+		{
+            while($reg = $query->fetch())
             {
-                mysql_connect($this->db_host,$this->db_user,$this->db_pass);
-                mysql_select_db($this->db_name);
-            }
-
-            // Getter method for creating/returning the single instance of this class
-            public static function getInstance()
-            {
-                if (!self::$m_pInstance)
-                {
-                    self::$m_pInstance = new Database();
-                }
-                return self::$m_pInstance;
-            }
-
-            public function query($query)
-            {
-               return mysql_query($query);
-            }
-
-         }
+               $this->values[]=$reg;
+        	}
+            return $this->values;     
+        }
+	}
+   
+    // Evita que el objeto se pueda clonar
+    public function __clone()
+    {
+        trigger_error('La clonation de cet objet ne se permet pas.', E_USER_ERROR);
+    }
+}
 ?>
