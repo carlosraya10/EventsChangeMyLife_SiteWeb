@@ -6,11 +6,11 @@ require_once("login.php");
 <html>
 <head>
 <title>Events Change Life plateforme de reservation en ligne</title>
-<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="../js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
-<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -20,11 +20,11 @@ require_once("login.php");
 <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <!-- start menu -->
-<link href="../css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="../js/megamenu.js"></script>
+<link href="css/megamenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/megamenu.js"></script>
 <script>$(document).ready(function(){$(".megamenu").megamenu();});</script>
 <!-- start slider -->
-<script src="../js/responsiveslides.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
  <script>
     $(function () {
       $("#slider").responsiveSlides({
@@ -36,7 +36,7 @@ require_once("login.php");
     });
   </script>
 <!--end slider -->
-<link rel="stylesheet" href="../css/flexslider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 				<script type="text/javascript">
 			$(window).load(function() {
 				$("#flexiselDemo").flexisel({
@@ -64,7 +64,7 @@ require_once("login.php");
 			    
 			});
 		</script>
-		<script type="text/javascript" src="../js/jquery.flexisel.js"></script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 </head>
 <body>
 	<?php include("header_account.php"); ?>

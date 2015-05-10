@@ -7,7 +7,7 @@
 	{	
 		?><script languaje="javascript">
       		alert( "Deconnecté(e)" );
-      		location.href = "../index.php";
+      		location.href = "index.php";
       	</script><?php
     }
 	else 
@@ -16,7 +16,7 @@
 		$sesion->end_sesion();
 		?><script languaje="javascript">
       		alert( "Deconnecté(e)" );
-      		location.href = "../index.php";
+      		location.href = "index.php";
       	</script><?php
 	}
 ?>

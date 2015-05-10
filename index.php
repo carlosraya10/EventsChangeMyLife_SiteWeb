@@ -64,11 +64,11 @@
 </head>
 <body>
 	<!-- header-section-starts -->
-	<?php include("php/header.php"); ?>
+	<?php include("header.php"); ?>
 	<!-- header-section-ends -->
 	
 				<!-- start header menu -->				
-				<?php include("php/Menu.php") ?>
+				<?php include("Menu.php") ?>
 				<div class="main-top">
 				<div class="col-md-8 banner">
 			
@@ -249,7 +249,7 @@
 		
 	  </div>
 		<!-- footer --> 
-		<?php include("php/footer.php") ?>		
+		<?php include("footer.php") ?>
 		
 </body>
 </html>

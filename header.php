@@ -12,7 +12,7 @@
 					<ul>
 						<li>
 							<i class="user"></i>
-							<a href="php/account.php">Mon espace client</a>
+							<a href="account.php">Mon espace client</a>
 						</li>
 						<li>
 							<i class="cart"></i>
@@ -29,11 +29,8 @@
 			<div class="header-bottom">
 				<div class="logo">
 					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
-<<<<<<< HEAD
-					<!--<a href="index.html"><img src="../images/logo.png" class="img-responsive" alt="" /></a>-->
-=======
-				
->>>>>>> origin/master
+
+					<!--<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>-->
 				</div>
 				<div class="search">
 					<div class="search2">
