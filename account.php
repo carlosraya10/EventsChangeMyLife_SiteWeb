@@ -67,7 +67,7 @@ require_once("login.php");
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 </head>
 <body>
-	<?php include("header_account.php"); ?>
+	<?php include("header.php"); ?>
 	
 	
 	<div class="wrap">

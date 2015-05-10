@@ -13,7 +13,7 @@ if( isset($_POST["btnOk"]) )
 	{			
 		$sesion->set("user",$user);
 		
-		header("location: principal.php");
+		header("location: spaceClient.php");
 	}
 	else
 	{

@@ -1,7 +1,10 @@
 <?php
 class sesion {
   function __construct() {
-     session_start ();
+     if(!isset($_SESSION))
+      {
+      session_start();
+      } 
   }
   public function set($name, $value) {
      $_SESSION [$name] = $value;

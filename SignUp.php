@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 	<!-- header-section-starts -->
-	
+	<?php include("header.php"); ?>
 	
 		<div class="wrap">
 			
@@ -160,5 +160,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 		</div>
 	 </div>
+
+	 <?php include("footer.php"); ?>
 </body>
 </html>

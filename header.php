@@ -12,11 +12,27 @@
 					<ul>
 						<li>
 							<i class="user"></i>
-							<a href="account.php">Mon espace client</a>
+							<a href="spaceClient.php">Mon espace client</a>
 						</li>
 						<li>
 							<i class="cart"></i>
-							<a href="#">Mon Panier</a>
+
+
+							<?php
+	//Connecter ou déconnecter selon la sessino
+	require_once("sesion.class.php");
+	$sesion = new sesion();
+	$user = $sesion->get("user");
+	if( $user == false )
+	{
+		echo "<a href='spaceClient.php'> Me connecter </a>";
+	}
+	else 
+	{
+		echo "<a href='fermerSession.php'> Me déconnecter </a>";	
+	}
+	?>
+
 						</li>
 						<li class="last">5</li>
 					</ul>					
@@ -28,9 +44,9 @@
 		<div class="wrap">
 			<div class="header-bottom">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>
+					<a href="index.php"><img src="images/logo.png" class="img-responsive" alt="" /></a>
 
-					<!--<a href="index.html"><img src="images/logo.png" class="img-responsive" alt="" /></a>-->
+					<!--<a href="index.php"><img src="images/logo.png" class="img-responsive" alt="" /></a>-->
 				</div>
 				<div class="search">
 					<div class="search2">
