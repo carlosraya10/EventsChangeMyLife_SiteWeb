@@ -14,12 +14,12 @@
 							<i class="user"></i>
 							<a href="spaceClient.php">Mon espace client</a>
 						</li>
-						<li>
-							<i class="cart"></i>
+						<li>     
+							<!--<i class="cart"></i>-->
 
 
 							<?php
-	//Connecter ou déconnecter selon la sessino
+	//Connecter ou déconnecter selon la session
 	require_once("sesion.class.php");
 	$sesion = new sesion();
 	$user = $sesion->get("user");
@@ -50,9 +50,10 @@
 				</div>
 				<div class="search">
 					<div class="search2">
-					  <form>
+					  <form name="recherche" method="POST" action="recherche.php" id="identfrm"autocomplete="on">
+					  <!--action="recherche.php?motcle=<?=$motcle?>"-->
 						<input type="submit" value="">
-						 <input type="text" value="Rechercher un prestataire" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search for a product, category or brand';}"/>
+						 <input type="text" name ="motcle"value="Rechercher un prestataire" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search for a product, category or brand';}"/>
 					  </form>
 					</div>
 				</div>

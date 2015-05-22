@@ -5,7 +5,7 @@
 			<div class="top-menu">
 			
 <ul class="megamenu skyblue">
-			<li><a class="color1" href="#">animation</a>
+			<li><a class="color1" href="">animation</a>
 				<div class="megapanel">
 					<div class="row">
 						<div class="col1">
@@ -39,7 +39,7 @@
 					</div>
     			</div>
 			</li>
-			<li class="grid"><a class="color2" href="#">Spectacle</a>
+			<li class="grid"><a class="color2" href="">Spectacle</a>
 				<div class="megapanel">
 					<div class="row">
 						<div class="col1">
@@ -101,7 +101,7 @@
 					</div>
     			</div>
 			</li>
-			<li class="grid"><a class="color3" href="#">Autres besoins</a>
+			<li class="grid"><a class="color3" href="">Autres besoins</a>
 				<div class="megapanel">
 					<div class="row">
 						<div class="col1">
@@ -157,7 +157,7 @@
 			</li>		
 			
 			
-			<li class="grid"><a class="color7" href="#">Locations</a>
+			<li class="grid"><a class="color7" href="">Locations</a>
 				<div class="megapanel">
 					<div class="row">
 						<div class="col1">
@@ -176,7 +176,7 @@
     			</div>
 			</li>
 			
-			<li class="grid"><a class="color7" href="#">unknown</a>
+			<li class="grid"><a class="color7" href="">unknown</a>
 				<div class="megapanel">
 					<div class="row">
 						<div class="col1">
@@ -191,7 +191,7 @@
     			</div>
 			</li>
 			
-			<li class="grid"><a class="color7" href="#">unknown</a>
+			<li class="grid"><a class="color7" href="">unknown</a>
 				<div class="megapanel">
 					<div class="row">
 						<div class="col1">

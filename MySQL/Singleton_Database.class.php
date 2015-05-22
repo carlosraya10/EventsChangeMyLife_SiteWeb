@@ -4,6 +4,7 @@ class SingletonPattern{
     // Contient l'intance du Singleton
     private static $instance;
 	private $values = array();
+    private $values1 = array();
 	private $dbh;
  
     // Un constructeur privé empêche la création d'un nouveau objet
@@ -53,7 +54,8 @@ class SingletonPattern{
     {
         $query2 = $this->dbh->prepare($val2);
         if ($query2->execute()){
-            echo ("ok");
+            //echo ("ok");
+            return true;
         }
         else{
             echo ("Error! Merci de bien vérifier les données dans la page précédente.");

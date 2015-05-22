@@ -23,22 +23,36 @@ $sex = $_GET['sexe'];
 $username = $_GET['utilisateur'];
 $pass = $_GET['password1'];
 //$fname = $_POST['prenom'];
-echo $fname;
  
-//requerimos solo la clase consultas
-require_once("class/class.queries.php");
+//On créé la connexion
+    require_once 'Singleton_Database.class.php';
 
-/* Pour faire une rêquete des personnes */
-$infoPeople = new Person;
-$people_record = $infoPeople->getPeople();
+//On accede à la méthode singleton qui va créer une instance de notre classe
+$newSingleton = SingletonPattern::singleton();
 
-print_r($people_record);
+//Pour registrer une personne on accede au méthode "query2"
+$res = "INSERT INTO PEOPLE(fname,lname,email,sex,username,pass) values('$fname','$lname','$email','$sex','$username','$pass');";
+$usuario = $newSingleton->query2($res);
 
+$res = "INSERT INTO PHOTOS(photo) values('');";
+$usuario = $newSingleton->query2($res);
 
-/* Pour registrer une personne */
-$oPeopleRecord = new Person;
-$insert = $oPeopleRecord->insertPeople($fname,$lname,$email,$sex,$username,$pass);
+//Insertamos en PHOTOS un valor nulo y en PEOPLE_PHOTOS la referencia al nuevo usuario
+$res = "SELECT * FROM PEOPLE order by id_people desc limit 1";
+$idpeople = $newSingleton->query($res);
+$res2 = "SELECT id_photo FROM PHOTOS order by id_photo desc limit 1";
+$idphoto = $newSingleton->query1($res2);
+foreach ($idpeople as $row):
+	$idpe = $row["id_people"];
+endforeach;
+foreach ($idphoto as $row2):
+	$idph = $row2["id_photo"];
+endforeach;
+	$res = "INSERT INTO PEOPLE_PHOTOS(id_people, id_photo) values('$idpe','$idph');";
+	$usuario = $newSingleton->query2($res);
 
+//Confirmation successful
+if($usuario){ echo "Insert Successful"; header("Location: ../account.php");}
 
 //Create a random code
 $random = substr(md5(uniqid(mt_rand(), true)) , 0, 8);
@@ -55,12 +69,12 @@ $headers = 'From: eventschandelife@support.com' . "\r\n" .
 	//On envoie l'e-mail
 	if(!mail($to, $subject, $message, $headers)) {
 	  echo "Error: ";
+	  header("Location: ../account.php");
 	} else {
 	  echo "Message send";
+	  header("Location: ../account.php");
 	}
 
-//Confirmation successful
-if($insert){ echo "Insert Successful"; }
 ?>
 </body>
 </html>

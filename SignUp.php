@@ -61,6 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			    });
 			    
 			});
+
 		</script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 
@@ -78,8 +79,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 alert("Les mots de passe ne sont pas pareils. Merci de les vérifier.");
                 return false;          
             }
-    }
+    	}
+
+    	//Funcion para comprobar €-m@!L
+	    function validarEmail(email) {
+	    	expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	    	if ( !expr.test(email) ){
+	    		return "false";
+            }else{
+              return "true";
+            }
+	    }
+
+
 </script>
+<style>
+    .error {font-weight: bold; color:red;}
+</style>
+
 </head>
 <body>
 	<!-- header-section-starts -->
@@ -116,7 +133,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 </div>
 				 <div>
 					 <span>Adresse e-mail*</span>
-					 <input type="text" name="email" value="" id="email" placeholder="MonAdresseEmail@MonDomaine.com" required /> 
+					 <input type="text" size="40" name="email" id="email" value="" placeholder="Merci d'écrire un e-mail valide." onfocus="this.value = '';" onblur = "if (validarEmail(this.value) == 'false'){this.value=''};" autofocus required />
 				 </div>
 				 <div>
 					 <span>Nom d'utilisateur*</span>

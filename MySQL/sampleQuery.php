@@ -12,7 +12,7 @@
 
 <?php
 	//On créé la connexion
-    require_once 'Singleton_Database.class.php';
+    include 'Singleton_Database.class.php';
 
 //On accede à la méthode singleton qui va créer une instance de notre classe
 $newSingleton = SingletonPattern::singleton();
@@ -92,7 +92,7 @@ if (is_uploaded_file($_FILES["userfile"]["tmp_name"]))
 
 	foreach ($usuario as $row):
 	  echo "<tr>";
-	  echo "<td align='center'>".$row["id_photo"]."</td><td align='center'>" . "<img src='imagen_mostrar.php?id=".$row["id_photo"]."'/></td>";
+	  echo "<td align='center'>".$row["id_photo"]."</td><td align='center'>" . "<img src='imagen_mostrar.php?id=".$row["id_photo"]."'/'></td>";
 	  echo "</tr>";
 	  echo "<br/>";
 	endforeach;

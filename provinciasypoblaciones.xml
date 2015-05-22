@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lista>
+	<provincia id="0">
+		<nombre><![CDATA[Haute-Corse]]></nombre>
+		<localidades>
+			<localidad c="0"><![CDATA[Aleria]]></localidad>
+			<localidad c="0"><![CDATA[Bastia]]></localidad>
+			<localidad c="0"><![CDATA[Biguglia]]></localidad>
+			<localidad c="0"><![CDATA[Borgo]]></localidad>
+			<localidad c="0"><![CDATA[Calenzana]]></localidad>
+			<localidad c="0"><![CDATA[Calvi]]></localidad>
+			<localidad c="0"><![CDATA[Corte]]></localidad>
+			<localidad c="0"><![CDATA[Furiani]]></localidad>
+			<localidad c="0"><![CDATA[Ghisonaccia]]></localidad>
+			<localidad c="0"><![CDATA[L'Ile-Rousse]]></localidad>
+			<localidad c="0"><![CDATA[Lucciana]]></localidad>
+			<localidad c="0"><![CDATA[Penta-di-Casinca]]></localidad>
+			<localidad c="0"><![CDATA[Prunelli-di-Fiumorbo]]></localidad>
+			<localidad c="0"><![CDATA[San-Martino-di-Lota]]></localidad>
+			<localidad c="0"><![CDATA[Ventiseri]]></localidad>
+			<localidad c="0"><![CDATA[Vescovato]]></localidad>
+			<localidad c="0"><![CDATA[Ville-di-Pietrabugno]]></localidad>
+		</localidades>
+	</provincia>
+
+	<provincia id="1">
+		<nombre><![CDATA[Corse-du-Sud]]></nombre>
+		<localidades>
+			<localidad c="0"><![CDATA[Afa]]></localidad>
+			<localidad c="0"><![CDATA[Ajaccio]]></localidad>
+			<localidad c="0"><![CDATA[Alata]]></localidad>
+			<localidad c="0"><![CDATA[Bastelicaccia]]></localidad>
+			<localidad c="0"><![CDATA[Bonifacio]]></localidad>
+			<localidad c="0"><![CDATA[Grosseto-Prugna]]></localidad>
+			<localidad c="0"><![CDATA[Porto-Vecchio]]></localidad>
+			<localidad c="0"><![CDATA[Propriano]]></localidad>
+			<localidad c="0"><![CDATA[Sarrola-Carcopino]]></localidad>
+			<localidad c="0"><![CDATA[Sartene]]></localidad>
+			<localidad c="0"><![CDATA[Zonza]]></localidad>
+		</localidades>
+	</provincia>
+</lista>
+

@@ -18,6 +18,11 @@
 	<html>
 	<head>
 	<title>Events Change Life plateforme de reservation en ligne</title>
+	<style>
+    .error {font-weight: bold; color:red;}
+    .mensaje {color:#030;}
+    .listadoImagenes img {border:1px solid #ccc; padding:2px;margin:2px;}
+    </style>
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery.min.js"></script>
@@ -86,6 +91,9 @@
                 password1 = document.frmUpdate.password1.value
                 password2 = document.frmUpdate.password2.value
                 if (password1 == password2){
+                	if(password2!=''){
+                		alert("Le mot de passe à bien été mise à jour.");
+                	}
                     return true;
                 }
                 else{
@@ -109,25 +117,126 @@
             respuesta = confirm("Etes-vous sûr de supprimer votre compte? Cette operation ne pourra pas être annulée.");
             if (respuesta){
               // si pulsamos en aceptar
-              //alert('Has dicho que si');
-              document.location.href="php/MySQL/cuenta_delete.php";
+              document.location.href="spaceClient_delete.php";
             }
             
             else{
               // si pulsamos en cancelar
               //alert('Has dicho que no');
-              document.location.href="spaceClient.php";
             }
           }
       </script>
 	</head>
 	<body>
-		<?php include("header.php"); ?>
-		
+		<?php include("header.php"); ?>		
 		
 		<div class="wrap">
 			<!-- start header menu -->
-			<!-- ?php include("Menu.php"); ?> -->
+	<?php
+	//Montrer le menu_client si connecté
+	require_once("sesion.class.php");
+	$sesion = new sesion();
+	$user = $sesion->get("user");
+	if( $user == false )
+	{
+	}
+	else 
+	{
+		include("menu_client.php");
+	}
+	?>
+
+
+<?php
+//On créé la connexion
+    require_once 'mysql/Singleton_Database.class.php';
+    //On accede à la méthode singleton qui va créer une instance de notre classe
+	$newSingleton = SingletonPattern::singleton();
+
+			//Seleccionamos el id_photo del usuario actual desde PEOPLE_PHOTOS
+			$res = "SELECT * FROM PEOPLE_PHOTOS where id_people = (SELECT id_people from PEOPLE where username = '$user' or email='$user');";
+			$idphoto = $newSingleton->query($res);
+			foreach ($idphoto as $row):
+				$idphoto = $row["id_photo"];
+				//echo "idphoto = ".$idphoto;
+			endforeach;
+
+	//**************************IMAGENES**************************
+			//Elimina errores si los hay en el if
+			error_reporting (0);
+# Comprovamos que se haya subido un fichero
+if (is_uploaded_file($_FILES["userfile"]["tmp_name"]))
+{
+    # verificamos el formato de la imagen
+    if ($_FILES["userfile"]["type"]=="image/jpeg" || $_FILES["userfile"]["type"]=="image/pjpeg" || $_FILES["userfile"]["type"]=="image/gif" || $_FILES["userfile"]["type"]=="image/bmp" || $_FILES["userfile"]["type"]=="image/png")
+    {
+        # Cogemos la anchura y altura de la imagen
+        $info=getimagesize($_FILES["userfile"]["tmp_name"]);
+        //echo "<BR>".$info[0]; //anchura
+        //echo "<BR>".$info[1]; //altura
+        //echo "<BR>".$info[2]; //1-GIF, 2-JPG, 3-PNG
+        //echo "<BR>".$info[3]; //cadena de texto para el tag <img
+
+        # Escapa caracteres especiales
+        $imagenEscapes=mysql_real_escape_string(file_get_contents($_FILES["userfile"]["tmp_name"]));
+
+        # Actualizamos la imagen a la base de datos
+			//on accede au méthode "query2"
+			$res = "UPDATE PHOTOS SET photo='$imagenEscapes' WHERE id_photo='$idphoto';";
+			$usuario = $newSingleton->query2($res);
+    }else{
+        echo "<div class='error'>Error: Le format du fichier doit être JPG, GIF, BMP ou PNG.</div>";
+    }
+}
+
+//****************Recuperamos datos de people******************
+	$res2 = "SELECT * FROM PEOPLE where username = '$user' or email = '$user';";
+	$datos = $newSingleton->query1($res2);
+	foreach ($datos as $row2):
+		$_id_people = $row2["id_people"];
+		$_fname = $row2["fname"];
+		$_lname = $row2["lname"];
+		$_email = $row2["email"];
+		$_sex = $row2["sex"];
+		if ($_sex == "h"){
+			$_sex = "Homme";
+		}else{
+			$_sex = "Femme";
+		}
+		$_username = $row2["username"];
+	endforeach;
+//****************Insertamos si no estan vacios******************
+	$fname = $_POST['fname'];
+	$lname = $_POST['lname'];
+	$email = $_POST['email'];
+	$username = $_POST['username'];
+	$password1 = $_POST['password1'];
+	$password2 = $_POST['password2'];
+	if (!empty($fname)){
+		$res = "UPDATE PEOPLE SET fname='$fname' WHERE username='$user' or email = '$user';";
+		$usuario = $newSingleton->query2($res);
+		$_fname = $fname;
+	}
+	if (!empty($lname)){
+		$res = "UPDATE PEOPLE SET lname='$lname' WHERE username='$user' or email = '$user';";
+		$usuario = $newSingleton->query2($res);
+		$_lname = $lname;
+	}
+	if (!empty($email)){
+		$res = "UPDATE PEOPLE SET email='$email' WHERE username='$user' or email = '$user';";
+		$usuario = $newSingleton->query2($res);
+		$_email = $email;
+	}
+	if (!empty($username)){
+		$res = "UPDATE PEOPLE SET username='$username' WHERE username='$user' or email = '$user';";
+		$usuario = $newSingleton->query2($res);
+		$_username = $username;
+	}
+	if (!empty($password1)){
+		$res = "UPDATE PEOPLE SET pass='$password1' WHERE username='$user' or email = '$user';";
+		$usuario = $newSingleton->query2($res);
+	}
+?>
 
 			<!-- start account -->
 			<div class="login-page">
@@ -136,7 +245,12 @@
 				   <!--Premier carreau-->
 				   <div class="col-md-6 login-right">
 				  	 <h3>METTRE A JOUR MON PROFIL</h3>
-					 	<FORM name='frmUpdate' id='frmUpdate' action='php/MySQL/cuenta_update.php' onsubmit="return checkPassword();" method='GET'>
+				  	 <div class="available">
+					 	<FORM enctype="multipart/form-data" name='frmUpdate' id='frmUpdate' action='<?php echo $_SERVER["PHP_SELF"]?>' onsubmit="return checkPassword();" method='POST'>
+					 	<div>
+				      		<span>Changer ma photo de profil</span>
+				          	<input name="userfile" type="file" />
+				        </div>
 					 	<div>
 				      		<span>Changer prénom</span>
 				          	<input type="text" size="40" name="fname" id="fname" value="" placeholder="Prénom" autofocus  />
@@ -166,31 +280,51 @@
 				        </div>
 				          <span class="pull-right"><input type="submit" name="btnOk" id="btnOk" value="Mettre à jour"></span>
 				      	</FORM>
+				      	</div>
 				      	<br/><br/><br/>
 				      	<span><a href="javascript:confirmar();">Supprimer compte</a></span>
 						
 				   </div>
 
-
 				   <!--Deuxième carreau-->
 
 				   <div class="col-md-6 login-right">
 				  	<h3>MON PROFIL</h3>
-					<p>Si vous êtes déjà membre, veuillez vous connecter.</p>
-					<form name="frmLogin" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="identfrm" autocomplete="on">
+				  	<p>
+<div class="listadoImagenes"><center>
+    <?php
+    //On montre tous les photos
+			 $res = "SELECT * FROM PHOTOS where id_photo = '$idphoto';";
+			 $usuario = $newSingleton->query1($res);
+	  //echo "idphoto = ".$idphoto;
+	  echo "<img src='mysql/imagen_mostrar.php?id=$idphoto'/>";
+    ?>
+</div></center>
+<p>
+<div class="available">
+<form name="frmLogin" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="identfrm" autocomplete="on">
 					  <div>
-					  <p class="required"><?= $msg ?></p>
-						<span>Utilisateur*</span>
-						<input type="text" size="40" name="user" value="" id="user" placeholder="Votre login" autofocus required />
+						<span>Prénom : </span>
+						<p><?= $_fname ?></p>
 					  </div>
 					  <div>
-						<span>Mot de passe*</span>
-						<input type="password" size="40" autocomplete="off" name="pass" value="" id="pass" placeholder="Mot de passe" required />
+						<span>Nom : </span>
+						<p><?= $_lname ?></p>
 					  </div>
-					  <p class="required">* Champs obligatoires</p>
-					  <a class="forgot" href="#">Mot De Passe Oublié?</a>
-					  <input type="submit" name="btnOk" value="OK" id="btnOk" />
+					  <div>
+						<span>E-mail : </span>
+						<p><?= $_email ?></p>
+					  </div>
+					  <div>
+						<span>Sexe : </span>
+						<p><?= $_sex ?></p>
+					  </div>
+					  <div>
+						<span>Nom d'utilisateur : </span>
+						<p><?= $_username ?></p>
+					  </div>
 				    </form>
+				    </div>
 				   </div>	
 				   <div class="clearfix"> </div>
 				 </div>
@@ -205,7 +339,7 @@
 
 
 
-
+<!--
 	<!DOCTYPE html>
 	<html lang = "fr">
 		<head>
@@ -223,6 +357,7 @@
 			</section>
 		</body>
 	</html>
-	<?php 
+-->
+	<?php
 	}//else (SY ESTA LOGUEADO)
 ?>

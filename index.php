@@ -99,13 +99,14 @@
 		   
 		   <div class="col-md-4 right-grid">
 				<div class="right-grid-top">
-					<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié.</p>
+					<p>ECL est une plateforme centrale de réservation destinée à l'événementiel pour permettre aux professionnels et aux amateurs de mettre en avant leurs compétences ou services afin de se faire valoir. 
+					</p>
 				</div>
 				<div class="right-grid-bottom">
 					<div class="right-grid-bottom-left">
-						<h3>JEU CONCOURS</h3>
+						<h3>PROMOS DU JOUR</h3>
 						<p>Valable 3:42:56</p>
-						<h5>Quizz</h5>
+						<h5>-----------------------------------------------</h5>
 						<h2>Inscription gratuite</h2>
 						<a href="single.html">Je m'inscris<i class="go"></i></a>
 					</div>

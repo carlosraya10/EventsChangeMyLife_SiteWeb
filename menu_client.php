@@ -1,10 +1,38 @@
-
 <div class="wrap">
 		<div class="navigation-strip">
-			<h4>Catégories<i class="arrow"></i></h4>
+			<h4>MENU<i class="arrow"></i></h4>
 			<div class="top-menu">
 			
 <ul class="megamenu skyblue">
+			<li><a class="color1" href="#">mon compte</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Mon profil</h4>
+								<ul>
+									<li><a href="spaceClient.php">Consulter mon profil</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+    			</div>
+			</li>
+			<li class="grid"><a class="color2" href="#">Mes annonces</a>
+				<div class="megapanel">
+					<div class="row">
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Annonces</h4>
+								<ul>
+									<li><a href="spaceClient_createAd.php">Publier un annonce</a></li>
+									<li><a href="spaceClient_myAds.php">Mes annonces</a></li>
+								</ul>	
+							</div>							
+						</div>
+					</div>
+    			</div>
+			</li>
 			<li><a class="color1" href="#">animation</a>
 				<div class="megapanel">
 					<div class="row">
@@ -175,6 +203,8 @@
 					</div>
     			</div>
 			</li>
+			
+			
 			
 			</ul>
 			</div>
